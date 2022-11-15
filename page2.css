@@ -1,0 +1,137 @@
+.page1
+{
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.title2
+{
+    display: grid;
+    place-items: center;
+}
+
+.page2
+{
+    margin-top: -1.5%;
+    background-color: rgb(66, 83, 87);
+    /* background-color: rgb(132, 153, 158); */
+    color: black;
+    box-sizing: border-box;
+    /* float: right; */
+    width: 105vw;
+    height: 110vh;
+    overflow-y: hidden;
+    margin-left: 100%;
+    margin-top: -200%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+.grid
+{
+    margin-top: 4.5%;
+    display: grid;
+    place-items: center;
+    opacity: 0.9;
+}
+
+h1
+{
+    color: black;
+}
+
+svg {
+    fill: currentColor;
+    height: auto;
+    max-width: 66vmin;
+    transform-origin: center;
+    width: 10%;
+    transform: rotate(-10deg);
+  }
+
+.gang
+{
+    margin-top: -40%; margin-left: 10%;
+    
+}
+
+.code
+{
+    height: 150px;
+    width: 3px;
+    background-color: black;
+    margin-top: -2%;
+    margin-left: 4%;
+
+}
+
+.text1{
+    max-width: 300px;
+    margin-left: -5%;
+}
+
+.supply
+{
+    position: absolute;
+    margin-top: 0%;
+    min-width: 100px;
+}
+
+.price
+{
+    margin-top: -20%;
+    float: right;
+    margin-right: 5%;
+    
+}
+
+#circ
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border:  2px black;
+    border-style: dashed;
+}
+
+#circ h1
+{
+    margin-left: 70%;
+    /* padding: px; */
+    background-color: rgb(132, 153, 158);
+}
+
+#line
+{
+    height: 100px;
+    width: 3px;
+    background-color: black;
+    margin-top: -60%;
+    margin-left: 44%;
+
+}
+
+.p
+{
+    width: 200px;
+}
+
+h3
+{
+    margin-top: -1%;
+}
+
+.founders
+{
+    margin-top: 40%;
+}
+
+.f2
+{
+    /* position: absolute; */
+    margin-top: -0.5%;
+    margin-bottom: 1%;
+}

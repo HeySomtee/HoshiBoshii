@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/page3.css">
+
+    <style>
+        body{
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="page3" class="page3">
+        <div id="const">
+            <h1 id="heading">
+                WELCOME VTUBERS <br>
+                <span id="aboutV">About vtube</span>
+            </h1>
+            
+           <div id="ggrid">
+            <div id="About-text">
+                <p>
+                    VTube Studio is an app for Virtual YouTubers that makes it easy and fun to bring your own Live2D models to life.
+                </p>
+                <p>
+                    <a href="">
+                        <button>GET IT ON STEAM</button>
+                    </a>
+                </p>
+
+                <p>
+                    <h1>ACCURATE</h1>
+                    Thanks to webcam and iPhone face tracking, VTube Studio provides accurate control over your Live2D model, including eye-tracking and winking (might have to practice that one a bit though)
+                    VTube Studio now also supports hand tracking!
+
+                </p>
+
+                <p>
+                    <h1>FUN</h1>
+                    VTube Studio can do everything you'll need and more! Hotkeys to control everything in your scene, microphone-lipsync, animated PNG props tracking your model and MUCH MORE!!
+                </p>
+
+                <p>
+                    <h1>COMMUNITY</h1>
+                    Need help? Wanna share something you made? Request a feature?
+                    People in our Community Discord server are there to help you!
+
+
+                </p>
+            </div>
+           </div>
+
+            <div id="header">
+                <h1 id="andriodd">How to use Mira| Android <br> <br>
+                    <span id="v">video</span> <span id="t">text</span>
+                </h1>
+                <h1 id="iphonee">How to use Mira| IOS <br> <br> <br> 
+                    <span id="v1">video</span> <span id="t1">text</span>
+                </h1>
+                <h1 id="mpc">How to use Mira| Mac/PC <br> <br>
+                    <span id="v2">video</span> <span id="t2">text</span>
+                </h1>
+            </div>
+        </div>
+        
+
+        <div id="andriod">
+            <label class="entph" for="phoneint">
+                <input class="toggler" type="checkbox" id="phoneint"/>
+                    <div class="ibody">
+                      <div class="itop">
+                        <div class="icam"></div>
+                        <div class="iear"></div>
+                      </div>
+                      <div class="imiddle">
+                        <div class="icontent">
+                            <iframe id="xvx" height="300px" src="https://www.youtube.com/embed/3mic4A44w2Q" title="VTube Studio for Android" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="ibottom">
+                        <div class="ihomebutton">
+                        </div>
+                      </div>
+                    </div>
+                <div class="iinfo"><p>Click the phone or here to change view!</p></div>
+            </label>   
+        </div>
+
+        <!-- <iframe width="665" height="374" src="" title="Quick start guide for Vtube Studio, the best Live2D app. A beginners tutorial for Vtube Studio!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        
+        <div id="mac" class="mac">
+            <div class="container">
+                <div class="laptop">
+                  <div class="laptop__screen">
+                    <!-- <img src="https://picsum.photos/1600/1000" width="1600" height="1000" alt="Screen"/> -->
+                    <iframe id="iscreen" height="200px" width="200px" src="https://www.youtube.com/embed/MwxTtg2kwl0" title="VTube Studio for Android" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                  <div class="laptop__bottom">
+                    <div class="laptop__under"></div>
+                  </div>
+                  <div class="laptop__shadow"></div>
+                </div>
+              </div>
+        </div>
+
+        
+        <div style="z-index: -1;">
+            <video autoplay loop id="vid" width="300px" src="/result_eRDNZwR.webm"></video>
+        </div>
+
+        <!-- <iframe src="https://www.succeedsocially.com/dance" frameborder="0"></iframe> -->
+
+    </div>
+
+    <script>
+        const andriod = document.getElementById('andriodd');
+        const iphone = document.getElementById('iphonee');
+        const mpc = document.getElementById('mpc');
+        const videoo = document.getElementById('vid');
+        const macBook = document.getElementById('mac');
+        const ifram = document.getElementById('xvx');
+        // for text btns
+        const btn = document.getElementById('t');
+        const btn1 = document.getElementById('t1');
+        const btn2 = document.getElementById('t2');
+        // for video btns 
+        const btnn = document.getElementById('v');
+        const btnn1 = document.getElementById('v1');
+        const btnn2 = document.getElementById('v2');
+
+       
+       andriod.addEventListener('click', display);
+       iphone.addEventListener('click', display);
+        function display(params) {
+            document.getElementById('andriod').style.display = 'block';
+            macBook.style.display = "none";
+
+        }
+
+        mpc.addEventListener('click', disPlay1);
+        function disPlay1(params) {
+            macBook.style.display = "block";
+            document.getElementById('andriod').style.display = 'none';
+        }
+
+
+        btn.addEventListener('click', fram);
+        btn1.addEventListener('click', fram);
+        btn2.addEventListener('click', fram);
+        function fram() {
+            document.getElementById('xvx').src = "https://baixarapk.gratis/en/app/1511435444/vtube-studio";
+            document.getElementById('iscreen').src = "https://baixarapk.gratis/en/app/1511435444/vtube-studio";
+        }
+
+        btnn.addEventListener('click', func)
+        btnn1.addEventListener('click', func)
+        btnn2.addEventListener('click', func)
+        function func(params) {
+            document.getElementById('xvx').src = "https://www.youtube.com/embed/3mic4A44w2Q";
+        }
+
+        document.getElementById('aboutV').addEventListener('click', npx);
+        function npx(e) {
+            document.getElementById('ggrid').style.display = 'block';
+
+            e.stopImmediatePropagation();
+                this.removeEventListener("click", npx);
+                var doc = document.getElementById('aboutV')
+                doc.onclick = npm;
+        }
+
+        function npm(e) {
+            document.getElementById('ggrid').style.display = 'none';
+
+            e.stopImmediatePropagation();
+                this.removeEventListener("click", npm);
+                var doc = document.getElementById('aboutV')
+                doc.onclick = npx;
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>
