@@ -799,3 +799,20 @@ input[value="on"]:checked ~
   {
     position: absolute;
   }
+
+  #error
+  {
+    display: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #ddd
+    {
+        display: none;
+    }
+
+    #error
+    {
+        display: block;
+    }
+    }
